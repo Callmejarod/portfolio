@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+ <head>
+     <title>Jarod Atienzo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+ </head>
+ <body class="light-theme">
+     <header>
+     <h1 class="page-header">Jarod Atienzo</h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://html-elements.jarodatienzo.repl.co/" target="_blank">HTML Elements</a>
+            <a href="https://callmejarod.github.io/Stylin-with-css/" target="_blank">Stylin-with-CSS</a>
+            <a href="https://callmejarod.github.io/Selectors/" target="_blank">Selectors</a>
+            <a href="https://callmejarod.github.io/css-positioning/" target="_blank">Positioning</a>
+            <a href="https://callmejarod.github.io/time-of-day/" target="_blank">Time of Day</a>
+            <a href="https://callmejarod.github.io/daily-grind/" target="_blank">Daily-Grind</a>
+            <a href="https://callmejarod.github.io/creatures/" target="_blank">Creatures</a>
+            <a href="https://callmejarod.github.io/form-processing/" target="_blank">Forms</a>
+            <a href="https://callmejarod.github.io/dom-play/" target="_blank">DOM Play</a>
+            <a href="http://github.com/Callmejarod" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jarod-atienzo-279a70250/" target="_blank">LinkedIn</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+     </header>
+     
+   <main class="wrapper">
+        <picture class="profile">
+            <source media="(min-width: 1200px)" srcset="images/desktop2.jpg">
+            <source media="(min-width: 501px)" srcset="images/tablet.jpg">
+            <img src="images/phone.jpg" alt="That's me!">
+        </picture>   
+       <h2 class="subheader">About Me</h2>
+       
+       <p>My name is Jarod Atienzo, and I am an emerging tech professional looking for opportunities in the tech field. I am currently enrolled in a program called Year Up which equips young empowered individuals with the technical and soft skills of a professional in the tech industry.</p>
+       
+       <p>With a love for technology that's been developing and growing since a young age, I have continued to expand my knowledge with many different products and started to learn coding languages such as Python, HTML, CSS, and JavaScript. With the world forever growing and changing at a rapid rate, I would love to be one of the ones that can have even a subtle impact.</p>
+       
+       <P>My earliest exposure to technology was through a gaming system known as the Xbox 360. The Xbox had many games and features that I would get lost in for countless hours. Eventually it led me to question, "How does this all work?" I started to take classes about programming languages which eventually led me to where I am today, here at Year Up.</P>
+
+       <P>I am eager to showcase my skills and passion for future projects and excited for what's to come in the near future for tech. Above, you can find links to projects I've worked on as well my LinkedIn profile. Please feel free to connect with me over LinkedIn to talk about anything tech related and possible busisness opportunities!</P>
+
+       <h3 class="subheader">Fun Facts!</h3>
+
+       <p>Maintaining a healthy work-life balance is a value I hold dear when considering job opportunities. When I'm not at work, you'll often find me engrossed in the gaming world, with my top three favorites being Overwatch, Battlefield, and Halo. I'm a fitness enthusiast who hits the gym regularly, but I also love watching sports and getting lost listening to music. I love going on random adventures. Most importantly, my heart lies in the time I spend with friends and family, who are the true essence of my life. </p>
+
+       <div>
+        <button id="ninth" class="btn">Dark Mode</button>
+       </div>
+     <footer>
+      <p><small>&copy; 2021-<span id="this-year"></span> by 
+          Jarod Atienzo, All Rights Reserved ~ 
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+     </p>
+    </footer>
+  </main>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+<script src="app.js">
+    
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+     
+     //set current year in span with id of this-year
+     let d = new Date(); let thisYear = d.getFullYear();
+     document.getElementById("this-year").innerHTML = thisYear;
+    
+   
+</script>
+     
+ </body>
+</html>

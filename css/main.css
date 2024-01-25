@@ -1,0 +1,184 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Raleway:ital,wght@1,600&family=Sora:wght@100&display=swap');
+
+:root {
+--white: #F6F6F6;
+--beige: #DDD0C8;
+--black: #1F1F1F;
+--lightBack: url("../images/LBackground.JPG");
+--darkBack: url("../images/DBackground.JPG");
+
+}
+
+html {
+    /* background-color: #363538; */
+    /* background-image: url("../images/background2.JPG"); */
+    background: var(--bIMG);
+    background-size: 2000px 1200px;
+    font-family: 'Inter', sans-serif;
+   
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #b9a86b;
+   /* background: #94867e; */ 
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin: auto;
+    background: #fff;
+    line-height: 2.5em;
+}
+h1.page-header{
+    background-color:#F6F6F6;
+    background-color: var(--bg);
+    color: var(--fontColor);
+}
+
+/* main.wrapper {
+    background-color: #F6F6F6;
+    overflow: auto;
+} */
+
+body {
+    background-color: var(--bg);
+    color: var(--fontColor);
+    overflow: auto
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --bIMG: var(--darkBack);
+    
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --bIMG: var(--lightBack);
+    
+}
+
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+h2,h3 {
+    font-weight: bold;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color:#588157;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: #a3b18a;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        /* width: 79%; */
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 40%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 100%;
+    }
+
+    
+}
+
+
+/* button */
+
+
+.btn{
+    position: absolute;
+    /* top: 15%; */
+    top: 15px;
+    right: 15%;
+    border-radius: 60%;
+    border-width: 0px;
+    height: 5%;
+    max-width: 200px;
+    min-width: 150px;
+    flex: 20%;
+  }
+
+.btn{
+    transition:all .5s ease-in-out;
+  }
+  
+.btn:hover {
+    background:black;
+    color:#DDD0C8;
+  }
