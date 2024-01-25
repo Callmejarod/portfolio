@@ -112,14 +112,7 @@ footer {
         padding-left: 1%;
     }
     
-    .btn{
-        /* position: absolute;
-        margin-left: 1350px;
-        bottom: 875px; */
-        margin-left: 1350px;
-    
-    }
-    
+
     picture.profile img {
         width: 40%;
         float: left;
@@ -140,11 +133,7 @@ footer {
         padding-left: 1%;
     }
 
-    .btn{
-        position: absolute;
-        margin-left: 1350px;
-        bottom: 875px;
-    }
+    
     
     picture.profile img {
         width: 50%;
@@ -178,7 +167,7 @@ footer {
 
 .btn{
     transition:all .5s ease-in-out;
-    /* border-width: 0; */
+    
     border-radius: 15px;
     font-size: 0.9rem;
     padding: 6px 12px;
