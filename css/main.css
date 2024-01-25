@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Sora:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Sora:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Raleway:ital,wght@1,600&family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Raleway:ital,wght@1,600&family=Roboto+Mono&family=Sora:wght@100&family=Source+Code+Pro:ital,wght@1,300&display=swap');
 
 :root {
 --white: #F6F6F6;
@@ -111,6 +112,12 @@ footer {
         padding-left: 1%;
     }
     
+    .btn{
+        position: absolute;
+        margin-left: 1350px;
+        bottom: 875px;
+    }
+    
     picture.profile img {
         width: 40%;
         float: left;
@@ -129,6 +136,12 @@ footer {
     h1 {
         width: 89%;
         padding-left: 1%;
+    }
+
+    .btn{
+        position: absolute;
+        margin-left: 1350px;
+        bottom: 875px;
     }
     
     picture.profile img {
@@ -162,23 +175,21 @@ footer {
 
 
 .btn{
-    position: absolute;
-    /* top: 15%; */
-    top: 15px;
-    right: 15%;
-    border-radius: 60%;
-    border-width: 0px;
-    height: 5%;
-    max-width: 200px;
-    min-width: 150px;
-    flex: 20%;
-  }
-
-.btn{
     transition:all .5s ease-in-out;
+    /* border-width: 0; */
+    border-radius: 15px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 15px; */
+    background-color:#F6F6F6;
+
   }
+  
+
   
 .btn:hover {
     background:black;
     color:#DDD0C8;
+    border-radius: 15px;
   }
