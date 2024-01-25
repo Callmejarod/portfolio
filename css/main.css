@@ -113,9 +113,11 @@ footer {
     }
     
     .btn{
-        position: absolute;
+        /* position: absolute;
         margin-left: 1350px;
-        bottom: 875px;
+        bottom: 875px; */
+        margin-left: 1350px;
+    
     }
     
     picture.profile img {
